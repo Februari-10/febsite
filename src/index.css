@@ -53,3 +53,18 @@ h1 {
 .card a:hover {
   text-decoration: underline;
 }
+
+.penguin {
+  position: fixed; 
+  top: 40%; 
+  transform: translateY(-50%); 
+  width: 150px;
+}
+
+.penguin.left {
+  left: 50px; 
+}
+
+.penguin.right {
+  right: 50px;
+}
