@@ -68,3 +68,44 @@ h1 {
 .penguin.right {
   right: 50px;
 }
+
+.news-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffffff22;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  text-align: left;
+  z-index: 1000; 
+}
+
+.news-box h2 {
+  color: #eee;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.news-box p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #eee;
+}
+
+.news-date {
+  font-weight: bold;
+  font-size: 16px; 
+  color: #ffd700;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 24px;
+  color: #ffd700;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
