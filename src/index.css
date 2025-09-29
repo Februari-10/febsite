@@ -15,8 +15,10 @@ h1 {
 }
 
 .cards-container {
-  display: flex;
-  gap: 20px; 
+  display: grid;
+  grid-template-columns: repeat(2, 250px); /* exactly 2 cards per row */
+  gap: 20px;
+  justify-content: center; /* center the grid */
   margin-top: 50px;
 }
 
@@ -24,9 +26,23 @@ h1 {
   background-color: #ffffff22; 
   padding: 20px;
   border-radius: 15px;
-  width: 250px;
+  width: 250px; /* fixed width */
   text-align: center;
   transition: transform 0.2s;
+  box-sizing: border-box;
+}
+
+/* Only allow max 2 cards per row on small screens */
+@media (max-width: 550px) {
+  .cards-container {
+    justify-content: space-around; /* nicely space 2 cards per row */
+  }
+}
+
+@media (max-width: 540px) {
+  .card {
+    width: 100%; /* stack fully on very tiny screens */
+  }
 }
 
 .card:hover {
